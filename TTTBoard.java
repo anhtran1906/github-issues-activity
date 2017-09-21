@@ -96,9 +96,9 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char col0winner() {
-		if (board[0][0] == 'x' && board[0][1] == 'x' && board[0]2] == 'x') {
+		if (board[0][0] == 'x' && board[1][0] == 'x' && board[2]0] == 'x') {
 			return 'x';
-		} else if (board[0][0] == 'o' && board[0][1] == 'o' && board[0][2] == 'o') {
+		} else if (board[0][0] == 'o' && board[1][0] == 'o' && board[2][0] == 'o') {
 			return 'o';
 		} else {
 			return '\0';
@@ -111,9 +111,9 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char col1winner() {
-		if (board[1][0] == 'x' && board[1][1] == 'x' && board[1][2] == 'x') {
+		if (board[1][1] == 'x' && board[2][1] == 'x' && board[2][2] == 'x') {
 			return 'x';
-		} else if (board[1][0] == 'o' && board[1][1] == 'o' && board[1][2] == 'o') {
+		} else if (board[1][1] == 'o' && board[2][1] == 'o' && board[2][2] == 'o') {
 			return 'o';
 		} else {
 			return '\0';
