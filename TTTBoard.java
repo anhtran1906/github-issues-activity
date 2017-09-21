@@ -180,7 +180,15 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char colWinner() {
-		return '\0';
+		if(col0Winnter() == 'x' && col1Winner() == 'x' && col2Winner() == 'x'){
+			return 'x';
+		}
+		else if(col0Winnter() == 'o' && col1Winner() == 'o' && col2Winner() == 'o') {
+			return 'o';
+		}
+		else {
+      			return '\0';
+		} 
 	}
 
 	/**
